@@ -1,0 +1,1110 @@
+﻿@font-face {
+    font-family: "DIN-Bold";
+    src: url("../fonts/DIN-Bold.woff2") format("woff2"), url("../fonts/DIN-Bold.woff") format("woff"), url("../fonts/DIN-Bold.ttf") format("truetype"), url("../fonts/DIN-Bold.eot") format("embedded-opentype"), url("../fonts/DIN-Bold.svg") format("svg"), url("../fonts/DIN-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DIN-Medium";
+    src: url("../fonts/DIN-Medium.woff2") format("woff2"), url("../fonts/DIN-Medium.woff") format("woff"), url("../fonts/DIN-Medium.ttf") format("truetype"), url("../fonts/DIN-Medium.eot") format("embedded-opentype"), url("../fonts/DIN-Medium.svg") format("svg"), url("../fonts/DIN-Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.zy-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    background-color: #082744;
+    overflow: hidden;
+}
+
+.zy-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background: url(../images/header-bg.png) 0 0 no-repeat;
+}
+
+.zy-header .logo {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.zy-content {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.zy-lside {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    width: 580px;
+}
+
+.zy-rside {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    width: 580px;
+}
+
+.zy-mside {
+    position: absolute;
+    top: 0;
+    left: 600px;
+    right: 600px;
+    bottom: 0;
+}
+
+.zy-tabs1 {
+    display: flex;
+    border: 1px solid #007bd2;
+    width: 276px;
+    height: 32px;
+    position: absolute;
+    top: -45px;
+    left: 0;
+}
+
+.zy-tabs1 span {
+    width: 92px;
+    height: 32px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    background-color: #043359;
+    cursor: pointer;
+}
+
+.zy-tabs1 span+span {
+    border-left: 1px solid #007bd2;
+}
+
+.zy-tabs1 span.cur {
+    background-color: #007bd2;
+}
+
+.zy-cell {
+    background-color: rgba(1, 10, 16, 0.3);
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 1px;
+}
+
+.zy-cell::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/cell-bg.png);
+}
+
+.zy-cell-hd {
+    display: flex;
+    height: 46px;
+    padding: 0 10px;
+    padding-bottom: 6px;
+    background: url(../images/hd-bg.png) center bottom no-repeat;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zy-cell-hd .til {
+    padding-left: 38px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 46px;
+    background-position: 0 10px;
+    background-repeat: no-repeat;
+}
+
+.zy-cell-hd .til1 {
+    background-image: url(../images/til1.png);
+}
+
+.zy-cell-hd .til2 {
+    background-image: url(../images/til2.png);
+}
+
+.zy-cell-hd .til3 {
+    background-image: url(../images/til3.png);
+}
+
+.zy-cell-hd .til4 {
+    background-image: url(../images/til4.png);
+}
+
+.zy-cell-hd .more {
+    width: 20px;
+    height: 20px;
+    background: url(../images/ic-more.png) no-repeat;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.zy-data1 {
+    display: flex;
+    background: url(../images/data1-bg1.png) no-repeat;
+    width: 559px;
+    height: 84px;
+    margin-left: 8px;
+    margin-top: 13px;
+}
+
+.zy-data1 .lp {
+    width: 120px;
+    text-align: center;
+}
+
+.zy-data1 .lp img {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.zy-data1 .lp p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 18px;
+}
+
+.zy-data1 .rp {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.zy-data1 .rp::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 1px;
+    background-color: rgba(0, 149, 255, 0.3);
+}
+
+.zy-data1 .rp .item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.zy-data1 .rp .item .p1 {
+    font-size: 30px;
+    color: #00b4ff;
+    line-height: 42px;
+    font-family: "DIN-Bold";
+}
+
+.zy-data1 .rp .item .p2 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+}
+
+.zy-line1 {
+    display: flex;
+    justify-content: space-between;
+    width: 559px;
+    margin-left: 8px;
+}
+
+.zy-line1 .zy-data1 {
+    margin-left: 0;
+    width: 279px;
+    background-image: url(../images/data1-bg2.png);
+}
+
+.zy-data2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 22px;
+    margin-top: -15px;
+}
+
+.zy-data2 li {
+    display: flex;
+    width: 180px;
+    margin-top: 30px;
+}
+
+.zy-data2 li .lp {
+    width: 58px;
+    height: 58px;
+    margin-right: 20px;
+}
+
+.zy-data2 li .rp {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.zy-data2 li .rp .p1 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.zy-data2 li .rp .p2 {
+    font-size: 32px;
+    color: #fff;
+    font-family: "DIN-Bold";
+}
+
+.zy-til1 {
+    font-size: 18px;
+    color: #fff;
+    padding-left: 30px;
+    background: url(../images/til1-bg.png) 0 center no-repeat;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.zy-data3 {
+    padding: 0 20px;
+}
+
+.zy-data3 li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 20px;
+    align-items: center;
+}
+
+.zy-data3 li .s1 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.zy-data3 li .bar {
+    width: 400px;
+    height: 15px;
+    border-radius: 8px;
+    background-color: #084171;
+}
+
+.zy-data3 li .bar .bili {
+    width: 80%;
+    height: 15px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #3f95ff, #15cfff);
+}
+
+.zy-data3 li .s2 {
+    font-size: 20px;
+    color: #18ccff;
+    line-height: 20px;
+    font-family: "DIN-Bold";
+}
+
+.zy-data4 {
+    display: flex;
+    width: 694px;
+    height: 132px;
+    background: url(../images/data4-bg.png);
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.zy-data4 li {
+    padding-top: 16px;
+    padding-left: 5px;
+}
+
+.zy-data4 li .p1 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+}
+
+.zy-data4 li .p2 {
+    font-size: 30px;
+    color: #00b4ff;
+    line-height: 40px;
+    font-family: "DIN-Bold";
+}
+
+.zy-data4 li:first-child .p2 {
+    color: #c6cf15;
+}
+
+.zy-data4 li .p3 {
+    display: flex;
+}
+
+.zy-data4 li .p3 span {
+    font-size: 14px;
+    color: #fff;
+    line-height: 36px;
+    margin-right: 5px;
+}
+
+.zy-data4 li .p3 .reduce {
+    padding-left: 18px;
+    color: #25d00f;
+    background: url(../images/reduce.png) 0 center no-repeat;
+}
+
+.zy-data4 li .p3 .add {
+    padding-left: 18px;
+    color: #f41b1b;
+    background: url(../images/add.png) 0 center no-repeat;
+}
+
+.zy-tools {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.zy-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.zy-checkbox input {
+    display: none;
+}
+
+.zy-checkbox i {
+    width: 15px;
+    height: 15px;
+    background: url(../images/ic-nocheck.png) no-repeat;
+}
+
+.zy-checkbox input:checked~i {
+    background-image: url(../images/ic-checked.png);
+}
+
+.zy-checkbox input:checked~i~span {
+    color: #0096ff;
+}
+
+.zy-checkbox span {
+    font-size: 16px;
+    color: #fff;
+    line-height: 16px;
+    margin-left: 8px;
+}
+
+.zy-labelbox {
+    width: 136px;
+    border: 1px solid #024c83;
+    position: relative;
+    background-color: rgba(1, 10, 16, 0.3);
+}
+
+.zy-labelbox>li {
+    padding: 7px 0;
+    padding-left: 9px;
+}
+
+.zy-labelbox>li.more {
+    background: url(../images/ic-arrow-right.png) 120px center no-repeat;
+}
+
+.zy-labelbox>li .youla {
+    position: absolute;
+    left: 154px;
+    top: 0;
+    width: 146px;
+    border: 1px solid #024c83;
+    background-color: rgba(1, 10, 16, 0.3);
+}
+
+.zy-labelbox>li .youla::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -6px;
+    background-color: #051b2c;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border: 1px solid #024c83;
+    border-color: transparent transparent #024c83 #024c83;
+}
+
+.zy-labelbox .youla ul li {
+    margin-bottom: 30px;
+}
+
+.zy-labelbox .youla ul li .top {
+    background: url(../images/ic-arrow-down.png) 115px center no-repeat;
+    padding-left: 9px;
+}
+
+.zy-labelbox .youla ul li .item {
+    padding-left: 32px;
+}
+
+.map-qiehuan {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 88px;
+    height: 88px;
+    border: 2px solid #007bd2;
+}
+
+.map-qiehuan img {
+    width: 100%;
+    height: 100%;
+}
+
+.map-qiehuan p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    background-color: rgba(0, 123, 210, 0.8);
+    text-align: center;
+}
+
+.map-qiehuan i {
+    display: inline-block;
+    padding-left: 16px;
+    background: url(../images/ic-qiehuan.png) 0 center no-repeat;
+}
+
+.go-work {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    width: 95px;
+    height: 34px;
+    background-color: #007bd2;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.zy-line2 {
+    display: flex;
+}
+
+.zy-data5 {
+    flex: 1;
+    padding: 0 30px;
+}
+
+.zy-data5 .zy-til1 {
+    margin-left: 0;
+}
+
+.zy-data5 ul {
+    position: relative;
+}
+
+.zy-data5 ul::after {
+    position: absolute;
+    right: -30px;
+    content: "";
+    top: 7px;
+    bottom: 7px;
+    border-right: 1px dashed #03406c;
+}
+
+.zy-data5 ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zy-data5 ul li .s1 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 26px;
+    width: 53px;
+    height: 26px;
+    text-align: center;
+}
+
+.zy-data5 ul li .no1 {
+    text-indent: -999em;
+    background: url(../images/top1.png) 0 0 no-repeat;
+    margin: 4px 0;
+}
+
+.zy-data5 ul li .no2 {
+    text-indent: -999em;
+    background: url(../images/top2.png) 0 0 no-repeat;
+    margin: 6px 0;
+}
+
+.zy-data5 ul li .no3 {
+    text-indent: -999em;
+    background: url(../images/top3.png) 0 0 no-repeat;
+    margin: 6px 0;
+}
+
+.zy-data5 ul li .s2 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 34px;
+}
+
+.zy-data5 ul li .s3 {
+    font-size: 18px;
+    color: #00b4ff;
+    line-height: 34px;
+    font-family: "DIN-Bold";
+}
+
+.zy-data6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-top: 25px;
+}
+
+.zy-data6 li {
+    display: flex;
+    width: 172px;
+    height: 58px;
+    background: url(../images/data6-li.png) no-repeat;
+    margin-bottom: 15px;
+}
+
+.zy-data6 li .s1 {
+    font-size: 16px;
+    color: #fff;
+    width: 84px;
+    text-align: center;
+    line-height: 58px;
+}
+
+.zy-data6 li .s2 {
+    font-size: 32px;
+    color: #00b4ff;
+    line-height: 58px;
+    font-family: "DIN-Bold";
+}
+
+.zy-data7 {
+    text-align: center;
+    padding: 10px;
+}
+
+.zy-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+}
+
+.abc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.qianse-map {
+    background: url(../images/qianse-di.png) 0 0 no-repeat;
+}
+
+.zy-alert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1111;
+    background-color: rgb(0, 39, 76);
+    border: 1px solid #004a91;
+    border-radius: 5px;
+}
+
+.fenxi-alert {
+    width: 1680px;
+    height: 940px;
+}
+
+.zy-alert .hd {
+    background-color: #004a91;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.zy-alert .hd p {
+    font-size: 20px;
+    color: #fff;
+    line-height: 50px;
+}
+
+.zy-alert .hd .close {
+    width: 14px;
+    height: 14px;
+    background: url(../images/ic-close.png) no-repeat;
+    cursor: pointer;
+}
+
+.zy-line3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.zy-line3 .lp {
+    width: 1085px;
+    margin-right: 20px;
+}
+
+.zy-line3 .rp {
+    flex: 1;
+}
+
+.zy-til2 {
+    font-size: 16px;
+    color: #fff;
+    padding-left: 12px;
+    line-height: 56px;
+    background: url(../images/til2-bg.png) 0 center no-repeat;
+}
+
+.zy-box1 {
+    width: 535px;
+    height: 338px;
+    background: url(../images/box1-bg.png) no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.zy-box2 {
+    width: 1085px;
+    height: 405px;
+    background: url(../images/box2-bg.png) no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.zy-box3 {
+    width: 545px;
+    height: 810px;
+    background: url(../images/box3-bg.png) no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.zy-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zy-tabs2 {
+    display: flex;
+    padding: 13px 0;
+}
+
+.zy-tabs2 span {
+    font-size: 16px;
+    color: #fff;
+    line-height: 18px;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+.zy-tabs2 span.cur {
+    color: #0092f9;
+}
+
+.zy-tabs2 span+span {
+    border-left: 1px solid #fff;
+}
+
+.zy-cell1 .tu {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.zy-table1 {
+    border: 1px solid #0051a2;
+    width: 100%;
+}
+
+.zy-table1 .txt-left {
+    text-align: left;
+    padding-left: 28px;
+}
+
+.zy-table1 th {
+    font-size: 16px;
+    color: #fff;
+    height: 36px;
+    background-color: #004386;
+    font-weight: normal;
+}
+
+.zy-table1 th .paixu {
+    font-size: 16px;
+    color: #fff;
+    line-height: 36px;
+    display: inline-block;
+    padding-right: 15px;
+    background: url(../images/paixu1.png) right center no-repeat;
+}
+
+.zy-table1 td {
+    font-size: 16px;
+    color: #fff;
+    height: 36px;
+    text-align: center;
+}
+
+.zy-table1 tbody tr+tr td {
+    border-top: 1px solid #0051a2;
+}
+
+.qiye-alert {
+    width: 876px;
+    height: 620px;
+}
+
+.qiye-alert .bd {
+    padding: 20px;
+}
+
+.qiye-txt1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #03325e;
+    height: 60px;
+}
+
+.qiye-txt1 .name {
+    display: flex;
+    background: url(../images/ic-qiye.png) 0 center no-repeat;
+    padding: 5px 0;
+    padding-left: 33px;
+}
+
+.qiye-txt1 .name span {
+    font-size: 18px;
+    color: #fff;
+    padding: 0 6px;
+    line-height: 20px;
+}
+
+.qiye-txt1 .name span+span {
+    border-left: 1px solid #fff;
+}
+
+.qiye-txt1 button {
+    border: none;
+    outline: none;
+    width: 95px;
+    height: 34px;
+    background-color: #007bd2;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+}
+
+.qiye-data {
+    display: flex;
+    margin-top: 20px;
+}
+
+.qiye-data .lp-menu {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.qiye-data .lp-menu li {
+    width: 98px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #007bd2;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.qiye-data .lp-menu li.cur {
+    background-color: #007bd2;
+}
+
+.qiye-data .rp-ctx {
+    flex: 1;
+    margin-top: -18px;
+}
+
+.zy-line .other {
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+
+.zy-select {
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid #007bd2;
+    width: 140px;
+    height: 32px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 32px;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+
+.renyuan-alert {
+    width: 776px;
+    height: 500px;
+}
+
+.zy-table2 {
+    width: 455px;
+    margin-right: 20px;
+    border: 1px solid #0051a2;
+}
+
+.zy-table2 td {
+    font-size: 16px;
+    color: #fff;
+    height: 43px;
+    padding-left: 18px;
+    border: 1px solid #0051a2;
+}
+
+.zy-table2 td.td-hd {
+    background-color: #013d79;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.zy-data8 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.zy-btn1 {
+    width: 158px;
+    height: 36px;
+    background-color: #007bd2;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+.xinxi-alert {
+    width: 1090px;
+    height: 910px;
+}
+
+.zy-liucheng {
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.zy-liucheng .p1 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    padding-left: 25px;
+    background: url(../images/liucheng-ic1.png) 0 center no-repeat;
+}
+
+.zy-liucheng .p2 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    padding-left: 25px;
+    background: url(../images/liucheng-ic2.png) 0 center no-repeat;
+}
+
+.zy-liucheng .list>li {
+    padding-bottom: 25px;
+    position: relative;
+    padding-left: 36px;
+    z-index: 2;
+}
+
+.zy-liucheng .list>li::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 13px;
+    height: 100%;
+    width: 1px;
+    background-color: #017dbe;
+}
+
+.zy-liucheng .list>li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+    background: url(../images/liucheng-ic3.png) center no-repeat;
+}
+
+.zy-liucheng .list>li.cur::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+    background: url(../images/liucheng-ic4.png) 0 0 no-repeat;
+}
+
+.zy-liucheng .list li .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zy-liucheng .list li .top span:first-child {
+    font-size: 16px;
+    color: #fff;
+    line-height: 22px;
+}
+
+.zy-liucheng .list li .top span:last-child {
+    font-size: 16px;
+    color: #dddddd;
+    line-height: 22px;
+}
+
+.zy-liucheng .list li .box {
+    padding-top: 10px;
+}
+
+.zy-liucheng .details {
+    padding-top: 5px;
+}
+
+.zy-liucheng .details p {
+    font-size: 16px;
+    color: #dbf0fe;
+    line-height: 30px;
+}
+
+.xianchang-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.xianchang-list li {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.xianchang-list li img {
+    width: 116px;
+    height: 164px;
+}
+
+.xianchang-list li p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+}
+
+.xinxi-alert .bd {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+}
+
+.xinxi-alert .zy-liucheng {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    padding-right: 20px;
+}
+
+.zy-dot {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.zy-site {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.zy-site p {
+    height: 28px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #002a48;
+    background-color: #fc922a;
+    position: relative;
+    border-radius: 14px;
+    line-height: 28px;
+    font-family: "DIN-Bold";
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.zy-site p::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid #ddd;
+    border-color: #fc922a transparent transparent transparent;
+}
